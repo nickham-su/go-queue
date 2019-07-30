@@ -9,8 +9,8 @@ type node struct {
 	next  *node
 }
 
-func New() Queue {
-	return Queue{}
+func New() *Queue {
+	return &Queue{}
 }
 
 type Queue struct {
