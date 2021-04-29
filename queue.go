@@ -52,3 +52,8 @@ func (q *Queue) Pop() (interface{}, bool) {
 
 	return value, true
 }
+
+func (q *Queue) Clear() {
+	q.head = nil
+	q.end = nil
+}
